@@ -1,26 +1,26 @@
 # fugglerstore
-<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <title>Fuggler Store 🧸</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Fuggler Blue Store 🧸</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     * {
       box-sizing: border-box;
-      font-family: 'Comic Sans MS', 'Poppins', sans-serif;
+      font-family: 'Poppins', Arial, sans-serif;
     }
 
     body {
       margin: 0;
-      background: #fff3f8;
-      color: #333;
+      background: #eef6ff;
+      color: #1e2a38;
     }
 
     header {
-      background: linear-gradient(135deg, #ff9ecb, #ffc6e2);
-      padding: 60px 20px;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      padding: 70px 20px;
       text-align: center;
     }
 
@@ -36,27 +36,33 @@
 
     section {
       padding: 60px 20px;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0b5ed7;
     }
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
     }
 
     .card {
-      background: #fff;
+      background: white;
       border-radius: 20px;
       padding: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
       text-align: center;
+      transition: transform 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-10px) rotate(-1deg);
+      transform: translateY(-10px);
     }
 
     .card img {
@@ -69,38 +75,38 @@
     }
 
     .price {
-      color: #ff5fa2;
+      color: #0d6efd;
       font-weight: bold;
       font-size: 1.1rem;
     }
 
-    .about, .testi {
-      background: #ffe4f1;
-      border-radius: 25px;
-      padding: 40px;
-      margin-top: 40px;
-    }
-
-    footer {
-      background: #ff9ecb;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 60px;
-    }
-
     button {
-      background: #ff5fa2;
+      background: #0d6efd;
       border: none;
       color: white;
-      padding: 10px 20px;
+      padding: 10px 22px;
       border-radius: 30px;
       cursor: pointer;
       margin-top: 10px;
     }
 
     button:hover {
-      background: #ff3f90;
+      background: #084298;
+    }
+
+    .info-box {
+      background: #dbeafe;
+      border-radius: 25px;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -108,56 +114,61 @@
 <body>
 
 <header>
-  <h1>Fuggler Store 🧸</h1>
-  <p>Boneka jelek-lucu yang tetap setia, unlike your ex.</p>
+  <h1>Fuggler Blue Store 🧸</h1>
+  <p>Boneka jelek-lucu yang setia. Gak kayak dia.</p>
 </header>
 
 <section>
-  <h2>🛍 Produk Kami</h2>
-  <div class="products">
+  <h2>🛍 Produk Unggulan</h2>
 
+  <div class="products">
     <div class="card">
-      <img src="https://via.placeholder.com/300x300?text=Fuggler+1">
-      <h3>Fuggler Ngambek</h3>
-      <p class="price">Rp 199.000</p>
+      <img src="images/fuggler-blue-1.jpg" alt="Fuggler Biru 1">
+      <h3>Fuggler Blue Devil</h3>
+      <p class="price">Rp 249.000</p>
       <button>Beli Sekarang</button>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/300x300?text=Fuggler+2">
-      <h3>Fuggler Overthinking</h3>
+      <img src="images/fuggler-blue-2.jpg" alt="Fuggler Biru 2">
+      <h3>Fuggler Sad Blue</h3>
       <p class="price">Rp 229.000</p>
       <button>Beli Sekarang</button>
     </div>
 
     <div class="card">
-      <img src="https://via.placeholder.com/300x300?text=Fuggler+3">
-      <h3>Fuggler Pura-Pura Kuat</h3>
-      <p class="price">Rp 249.000</p>
+      <img src="images/fuggler-blue-3.jpg" alt="Fuggler Biru 3">
+      <h3>Fuggler Overthinking</h3>
+      <p class="price">Rp 269.000</p>
       <button>Beli Sekarang</button>
     </div>
-
   </div>
 </section>
 
-<section class="about">
+<section class="info-box">
   <h2>📖 Tentang Kami</h2>
   <p>
-    Fuggler Store hadir untuk kamu yang butuh teman lucu, aneh,
-    dan gak ninggalin tanpa kejelasan.  
-    Mereka jelek, tapi jujur.
+    Fuggler Blue Store adalah toko boneka unik dengan karakter aneh,
+    lucu, dan jujur. Kami percaya boneka gak harus sempurna,
+    yang penting nemenin kamu pas lagi kangen orang yang salah.
   </p>
 </section>
 
-<section class="testi">
-  <h2>💬 Testimoni</h2>
-  <p>“Sejak beli Fuggler, aku gak nungguin chat dia lagi.”</p>
-  <p>“Mukanya jelek, tapi setia.”</p>
+<section class="info-box">
+  <h2>📍 Alamat & Kontak</h2>
+  <p><strong>Alamat:</strong> Jl. Kenangan No. 17, Kota kita, Indonesia</p>
+  <p><strong>WhatsApp:</strong> 0812-3456-7890</p>
+  <p><strong>Email:</strong> fugglerbluestore@gmail.com</p>
+  <p><strong>Instagram:</strong> @fugglerblue.store</p>
 </section>
 
 <footer>
-  <p>© 2026 Fuggler Store | Made with 🤡 & 💔</p>
+  <p>© 2026 Fuggler Blue Store</p>
+  <p>Made with 💙 & sedikit 💔</p>
 </footer>
 
 </body>
 </html>
+
+
+
