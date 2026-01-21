@@ -1,8 +1,8 @@
-# fugglerstore
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Fuggler Blue Store 🧸</title>
+<title>Fuggler Blue Store</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -83,6 +83,7 @@ header button{
 
 header img{
   width:100%;
+  max-width:420px;
   animation:float 4s ease-in-out infinite;
 }
 
@@ -102,7 +103,7 @@ section h3{
   margin-bottom:50px;
 }
 
-/* PRODUCTS */
+/* GRID PRODUCT */
 .products{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -115,27 +116,30 @@ section h3{
   padding:20px;
   text-align:center;
   box-shadow:0 20px 40px rgba(0,0,0,.1);
-  transition:.4s;
+  transition:.3s;
 }
 
 .card:hover{
-  transform:translateY(-12px);
+  transform:translateY(-10px);
 }
 
 .card img{
   width:100%;
-  border-radius:20px;
+  height:230px;
+  object-fit:cover;
+  border-radius:18px;
 }
 
 .price{
   color:var(--blue);
   font-weight:700;
+  margin:8px 0;
 }
 
 /* FEATURES */
 .features{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
   gap:30px;
 }
 
@@ -187,15 +191,6 @@ input,textarea{
   border:1px solid #cbd5e1;
 }
 
-form button{
-  background:var(--blue);
-  color:white;
-  border:none;
-  padding:14px;
-  border-radius:30px;
-  cursor:pointer;
-}
-
 /* FOOTER */
 footer{
   background:var(--blue);
@@ -222,62 +217,78 @@ footer{
 <body>
 
 <nav>
-  <h1>Fuggler Store 🧸</h1>
+  <h1>Fuggler Store</h1>
   <div>
-    <a href="#produk">Produk</a>
+    <a href="#home">Home</a>
     <a href="#kategori">Kategori</a>
+    <a href="#produk">Produk</a>
     <a href="#tentang">Tentang</a>
     <a href="#kontak">Kontak</a>
   </div>
 </nav>
 
-<header>
+<header id="home">
   <div>
     <h2>Fuggler Blue Store</h2>
-    <p>Toko boneka karakter unik dengan desain lucu, aneh, dan penuh ekspresi. Cocok untuk koleksi, hadiah, atau teman dekorasi.</p>
-    <button>Lihat Koleksi</button>
+    <p>
+      Toko boneka karakter unik dengan desain ekspresif dan detail yang kuat.
+      Cocok untuk koleksi, hadiah, dan dekorasi.
+    </p>
+    <button onclick="document.getElementById('produk').scrollIntoView()">Lihat Koleksi</button>
   </div>
-  <img src="https://i.imgur.com/1sJk7wD.png">
+
+  <!-- GANTI FOTO DI SINI -->
+  <img src="images/fuggler1.jpg" alt="Fuggler">
 </header>
 
 <section id="kategori">
-  <h3>🗂 Kategori Produk</h3>
+  <h3>🗂 Kategori</h3>
   <div class="features">
-    <div class="feature">🧸 Classic Fuggler</div>
+    <div class="feature">🧸 Classic Series</div>
     <div class="feature">😈 Monster Series</div>
-    <div class="feature">🌈 Color Edition</div>
-    <div class="feature">🎁 Limited Edition</div>
+    <div class="feature">🎨 Color Edition</div>
+    <div class="feature">🎁 Limited Item</div>
   </div>
 </section>
 
 <section id="produk">
   <h3>⭐ Produk Unggulan</h3>
   <div class="products">
+
+    <!-- PRODUK 1 -->
     <div class="card">
-      <img src="https://i.imgur.com/1sJk7wD.png">
-      <h4>Fuggler Devil</h4>
+      <img src="images/fuggler1.jpg">
+      <h4>Fuggler Classic Blue</h4>
       <p class="price">Rp 249.000</p>
+      <p>Material lembut dan detail karakter kuat.</p>
     </div>
+
+    <!-- PRODUK 2 -->
     <div class="card">
-      <img src="https://i.imgur.com/9RZ6ZQb.png">
-      <h4>Fuggler Red</h4>
-      <p class="price">Rp 229.000</p>
-    </div>
-    <div class="card">
-      <img src="https://i.imgur.com/4YF8nXa.png">
-      <h4>Fuggler Brown</h4>
+      <img src="images/fuggler2.jpg">
+      <h4>Fuggler Monster</h4>
       <p class="price">Rp 269.000</p>
+      <p>Desain unik dengan ekspresi khas.</p>
     </div>
+
+    <!-- PRODUK 3 -->
+    <div class="card">
+      <img src="images/fuggler3.jpg">
+      <h4>Fuggler Color Edition</h4>
+      <p class="price">Rp 229.000</p>
+      <p>Warna cerah untuk koleksi dekoratif.</p>
+    </div>
+
   </div>
 </section>
 
 <section>
   <h3>📦 Kenapa Pilih Kami</h3>
   <div class="features">
-    <div class="feature">✔ Material berkualitas</div>
+    <div class="feature">✔ Kualitas terjaga</div>
     <div class="feature">✔ Desain original</div>
     <div class="feature">✔ Aman untuk koleksi</div>
-    <div class="feature">✔ Pengiriman rapi</div>
+    <div class="feature">✔ Pengemasan rapi</div>
   </div>
 </section>
 
@@ -285,25 +296,25 @@ footer{
   <div class="box">
     <h3>Tentang Fuggler Store</h3>
     <p>
-      Fuggler Store menghadirkan boneka karakter dengan ekspresi unik
-      dan detail yang berbeda dari boneka pada umumnya.
-      Setiap produk dibuat untuk memberi kesan lucu, berani, dan berkarakter.
+      Fuggler Store menyediakan boneka karakter dengan pendekatan desain yang unik,
+      menggabungkan unsur lucu, ekspresif, dan berani.
+      Kami berkomitmen menghadirkan produk yang menarik dan berkualitas.
     </p>
   </div>
 </section>
 
 <section>
-  <h3>💬 Testimoni Pelanggan</h3>
+  <h3>💬 Testimoni</h3>
   <div class="testi">
-    <div>“Kualitasnya bagus dan detailnya lucu.”</div>
-    <div>“Cocok buat pajangan dan koleksi.”</div>
-    <div>“Pengiriman cepat dan rapi.”</div>
+    <div>“Detailnya rapi dan sesuai foto.”</div>
+    <div>“Cocok untuk pajangan.”</div>
+    <div>“Kualitasnya bagus.”</div>
   </div>
 </section>
 
 <section id="kontak">
   <div class="box">
-    <h3>📍 Hubungi Kami</h3>
+    <h3>📍 Kontak Kami</h3>
     <p>Alamat: Jl. Kreatif No.17, Indonesia</p>
     <p>WhatsApp: 0812-3456-7890</p>
     <p>Email: fugglerstore@gmail.com</p>
@@ -312,7 +323,9 @@ footer{
       <input type="text" placeholder="Nama">
       <input type="email" placeholder="Email">
       <textarea rows="4" placeholder="Pesan"></textarea>
-      <button>Kirim Pesan</button>
+      <button style="background:#2563eb;color:white;border:none;border-radius:30px;padding:14px;">
+        Kirim Pesan
+      </button>
     </form>
   </div>
 </section>
